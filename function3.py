@@ -44,3 +44,9 @@ print("---람다함수정의---")
 iterL = filter(lambda x:x>20, lst)
 for item in iterL:
     print(item)
+
+# filter, map 등 여러 값을 처리하는 함수에 대해,아래처럼 lambda를 쓸수있다.
+lst = [1,2,3]
+for i in map(lambda x:x+10, lst):
+    print(i)
+
