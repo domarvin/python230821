@@ -39,10 +39,10 @@ class BankAccount1:
 account2 = BankAccount1(100, "전우치", 15000)
 account2.deposit(3000)
 account2.withdraw(3000)
-account2.balance = 15000
-account2.__balance = 30000
+account2.balance = 15000 #이것은 클래스에 없는데, 신규로 변수를 만들어서 저장하니 에러안남
+account2.__balance = 30000 #이것은 클래스에 없는데, 신규로 변수를 만들어서 저장하니 에러안남
 #이름변경(_BankAccount__balance)로 접근가능
 print(account2) # 클래서에서 __str__ 구현을 안하면 클래스 이름을 찍는다
-print(account2.balance)
-print(account2.__balance)
+print(account2.balance) #이것은 클래스에 없는데, 신규로 변수를 만들어서 저장하니 에러안남
+print(account2.__balance) #이것은 클래스에 없는데, 신규로 변수를 만들어서 저장하니 에러안남
 print(account2._BankAccount1__balance)
